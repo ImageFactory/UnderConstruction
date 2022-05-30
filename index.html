@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/ad9c28e003.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto&display=swap');
+
+        :root {
+            --magic-number: 0.09719;
+            --content-width: 560px;
+            --skew-padding: calc(var(--content-width) * var(--magic-number));
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            width: 560px;
+            margin: auto;
+        }
+
+        header {
+            padding-top: var(--skew-padding);
+            padding-bottom: calc(var(--skew-padding) * 2);
+        }
+
+        header div {
+            transform: skew(-11deg) rotate(-10deg) translateY(var(--skew-padding));
+            margin: 1rem 0.5rem;
+        }
+
+        header h1,
+        header h2 {
+            display: inline-block;
+            color: black;
+            background: linear-gradient(90deg, #FFC80C, #FF9A0C);
+            padding: 0.5rem 1rem;
+            margin: 0;
+            font-size: 2.7rem;
+            white-space: nowrap;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        main h2 {
+            font-style: italic;
+        }
+
+        main iframe {
+            aspect-ratio: calc(560 / 315);
+            width: 100%;
+            height: auto;
+            padding-bottom: var(--skew-padding);
+        }
+
+        main .footer a {
+            text-decoration: none;
+            color: inherit;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>UNDER CONSTRUCTION</h1>
+        </div>
+        <div>
+            <h1>COMING SOON</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>CHECK UP OUR SOCIALS <br />OR... PLAY OUR REEL</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hVup5PYtpK8" title="ImageFactory Reel"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <div class="footer">
+            <a href="https://www.facebook.com/Image-Factory-102806645506325">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+
+            <a href="https://www.instagram.com/accounts/login/?next=/imagefactorybg/">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCLKX67_Dg5wnsjRhfq7Hmkw">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+        </div>
+    </main>
+
+</body>
+
+</html>
